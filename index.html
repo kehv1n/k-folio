@@ -1,52 +1,94 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<!DOCTYPE html><html>
+
+<head>
     <meta charset="utf-8">
     <title>Kev Folio</title>
     <!-- LINKS & CDNS -->
     <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <!-- END OF LINKS & CDNS -->
-  </head>
-  <body>
-    <!-- HEADER STUFF -->
-    <div class="row">
-      <div class="header">
-        <div class="header-content">
-          <p><span class = "gold">Love</span> What You Do</p>
-          <hr>
-          <img src="./assets/KSLogo.png" alt="Kevin Silva">
-          <p class = "quote">And You Shall Never Work a Day in <span class="gold">Your Life</span></p>
-        </div>
-      </div>
-    </div>
-    <!-- END OF HEADER -->
+</head>
+
+<body>
 
     <!-- NAVIGATION BAR -->
-    <div class="navie container">
+    <section id="home" class="home">
+      <div class="land">
+        <!-- HEADER STUFF -->
+        <div class="row">
+          <div class="header">
+            <div class="header-content">
+              <p><span class="gold">Love</span> What You Do</p>
+              <hr>
+              <img src="./assets/KSLogo.png" alt="Kevin Silva">
+              <p>And You Shall Never Work a Day in <span class="gold">Your Life</span></p>
+            </div>
+          </div>
+        </div>
+        <!-- END OF HEADER -->
+        <div class="navie container">
 
-      <nav id = "nav">
-        <ul>
-          <img class = "vine" src="./assets/imgs/vinebranch2.png" alt="vinebranch">
-          <span class = "slashes">//</span>
-          <li><a href="#">Home</a></li>
-          <span class = "slashes">//</span>
-          <li><a href="#">WhoAmI</a></li>
-          <span class = "slashes">//</span>
-          <li><a href="#">My Work</a></li>
-          <span class = "slashes">//</span>
-          <li><a href="#">Lets Chat</a></li>
-          <span class = "slashes">//</span>
-          <img class = "vine vine-right" src="./assets/imgs/vinebranch2.png" alt="vinebranch">
-        </ul>
-      </nav>
-    </div>
+          <nav id="nav">
+            <ul>
+              <img class="vine" src="./assets/imgs/vinebranch2.png" alt="vinebranch">
+              <span class="slashes">//</span>
+              <li><a class="page-scroll" href="#home">Home</a></li>
+              <span class="slashes">//</span>
+              <li><a class="page-scroll" href="#aboutMe">WhoAmI</a></li>
+              <span class="slashes">//</span>
+              <li><a href="#">My Work</a></li>
+              <span class="slashes">//</span>
+              <li><a href="#">Lets Chat</a></li>
+              <span class="slashes">//</span>
+              <img class="vine vine-right" src="./assets/imgs/vinebranch2.png" alt="vinebranch">
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
     <!-- NAVIGATION ENDS  -->
+    <section id = "aboutMe">
+      <div class="aboutMeCont container">
+        <div class="row">
+          <div class="left abMe col-md-7 col-sm-7 col-lg-7">
+            <div class="myInfo">
+              <h2>about me</h2>
+              <h4>developer, designer, and hippy from Miami, Florida</h4>
+              <div class="descr">
+                <p>I am a technology enthusiast who loves to create new things and tackle challenging problems
+                  with unique solutions.  Code has allowed me to turn any computer into a technological power
+                  drill; <strong> the idea of using this tool to help everyday people absolutely fascinates me</strong>.  Hungry to learn
+                  and constantly striving to adapt from my failures. </p>
+                  <p>When I’m not coding or pushing pixels, I’m at the gym or at the beach catching some sun. </p>
+              </div>
+            </div>
+
+            <!-- ABOUTME PAGE BEGINS HERE -->
+            <div class="myInterests">
+              <h3> My Interests:</h3>
+              <img id = "code" class  = "imgs" src="./assets/imgs/code.png" alt="code">
+              <img id = "plane" class  = "imgs" src="./assets/imgs/plane.png" alt="plane">
+              <img id = "volleyball" class  = "imgs" src="./assets/imgs/volelyball.png" alt="volleyball">
+            </div>
+          </div>
+          <div class="right abMe col-md-5 col-sm-5 col-lg-5">
+            <div class="selfie">
+              <img src="./assets/imgs/me.jpg" alt="car-selfie">
+              <div class="block"></div>
+              <div class="block two"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
 
     <!-- //SCRIPTS GO HERE -->
-    <script type="text/javascript" src = "./js/app.js">
-    // SCRIPTS END HERE
-    </script>
-  </body>
+    <script type="text/javascript" src="./js/app.js"></script>
+        <!-- // SCRIPTS END HERE -->
+</body>
+
 </html>
